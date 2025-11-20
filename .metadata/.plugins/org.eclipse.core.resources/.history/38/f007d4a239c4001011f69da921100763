@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	Create a project and understand the flow of the project with a MVC structure.
+}
+

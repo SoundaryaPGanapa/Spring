@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏫 School Dashboard</h1>
+
+      <div class="actions">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by school name"
+          onkeyup="fetchSchools()"
+        />
+        <button onclick="showForm()">➕ Add School</button>
+      </div>
+
+      <div id="formContainer" class="form-container hidden">
+        <input type="text" id="schoolName" placeholder="School Name" />
+        <input type="text" id="schoolLocation" placeholder="Location" />
+        <button onclick="addSchool()">Save</button>
+        <button onclick="hideForm()">Cancel</button>
+      </div>
+
+      <table id="schoolTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="formContainer" class="form-container hidden">
+      <input type="text" id="schoolName" placeholder="School Name" />
+      <input type="text" id="schoolLocation" placeholder="Location" />
+      <button onclick="addSchool()">💾 Save</button>
+      <button onclick="hideForm()">❌ Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

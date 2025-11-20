@@ -1,0 +1,5 @@
+package com.nimblex.SchoolPEPDemo.Model;
+
+public class Student {
+
+}
